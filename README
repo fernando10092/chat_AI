@@ -1,0 +1,88 @@
+#CRIE UM ARQUIVO .env em myapp/AI/.env e insira as credenciais da Gemini#
+
+🤖 AI Agent - LangChain & Gemini
+Este é um assistente virtual inteligente de pilha completa (Full Stack). O projeto utiliza React (TypeScript) no frontend e Django Rest Framework no backend para processar perguntas utilizando o modelo de linguagem Google Gemini via LangChain.
+
+🚀 Funcionalidades
+Interface moderna e responsiva com Styled Components.
+
+Integração em tempo real com a API Google Gemini.
+
+Backend robusto com Django Rest Framework (DRF).
+
+Tratamento de erros para limites de cota (Rate Limiting).
+
+Configuração de segurança com CORS.
+
+🛠️ Tecnologias Utilizadas
+Frontend:
+React (com TypeScript)
+
+Styled Components (Para estilização)
+
+Fetch API (Comunicação assíncrona)
+
+Backend:
+Django 5.x & DRF
+
+LangChain (Orquestração da IA)
+
+Google GenAI (Modelo Gemini 2.5 Flash/Lite)
+
+Python-dotenv (Gestão de variáveis de ambiente)
+
+🔧 Configuração e Instalação
+1. Requisitos Prévios
+Python 3.11+
+
+Node.js & npm/yarn
+
+Uma chave de API do Google AI Studio (Obtenha aqui)
+
+2. Configurando o Backend (Django)
+Bash
+# Entre na pasta do projeto
+cd backend
+
+# Crie e ative o ambiente virtual
+python -m venv env
+# No Windows:
+.\env\Scripts\activate
+
+# Instale as dependências
+pip install django djangorestframework django-cors-headers langchain-google-genai python-dotenv
+
+# Crie um arquivo .env na raiz do backend e adicione sua chave:
+# API_KEY=SUA_CHAVE_AQUI
+
+# Rode as migrações
+python manage.py migrate
+
+# Inicie o servidor
+python manage.py runserver
+3. Configurando o Frontend (React)
+Bash
+# Entre na pasta do frontend
+cd frontend
+
+# Instale as dependências
+npm install
+
+# Inicie o projeto
+npm run dev
+⚠️ Limitações de Cota (Importante)
+Este projeto utiliza o nível gratuito do Gemini.
+
+Gemini 2.5 Flash-Lite: Limite de 20 requisições por dia.
+
+Erro 429: Caso receba este erro, o sistema exibirá uma mensagem amigável informando que a cota diária foi atingida.
+
+📝 Estrutura de Arquivos
+/myapp/AI/ - Lógica de integração com LangChain.
+
+/myapp/views.py - Endpoints da API que processam o POST do React.
+
+/src/components/ - Componentes React estilizados.
+
+👨‍💻 Autor
+Desenvolvido por Fernando de Lima GOmes como parte de estudos em Inteligência Artificial e Desenvolvimento Full Stack.

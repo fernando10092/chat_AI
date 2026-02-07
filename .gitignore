@@ -1,0 +1,14 @@
+.env
+*.env
+.venv/
+env/
+venv/
+
+db.sqlite3
+__pycache__/
+*.py[cod]
+
+node_modules/
+dist/
+build/
+.eslintcache
