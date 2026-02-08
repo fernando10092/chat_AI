@@ -11,7 +11,7 @@ const Main = () => {
             <Body>
                 <Left>
                     <Title>AI Agent</Title>
-                    <Inp id="ipt" onChange={(e) => {
+                    <Inp value={type} id="ipt" onChange={(e) => {
                         setType(e.target.value)
                     }} />
 
@@ -28,6 +28,7 @@ const Main = () => {
                             const data = await response.json();
                             if (response.ok) {
                                 setAnswer(data.response);
+                                setType("");
                             } else {
                                 alert("Erro no else " + response.statusText)
                             }
