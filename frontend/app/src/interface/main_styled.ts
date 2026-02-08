@@ -67,4 +67,7 @@ margin: 10px auto;
 width: 500px;
 height: 450px;
 text-align: justify;
+max-height: 450px;
+scrollbar-width: thin;
+overflow-y: auto;
 `
