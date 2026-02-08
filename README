@@ -1,4 +1,5 @@
 #CRIE UM ARQUIVO .env em myapp/AI/.env e insira as credenciais da Gemini#
+#https://docs.langchain.com/oss/python/langchain/models#google-gemini"
 
 🤖 AI Agent - LangChain & Gemini
 Este é um assistente virtual inteligente de pilha completa (Full Stack). O projeto utiliza React (TypeScript) no frontend e Django Rest Framework no backend para processar perguntas utilizando o modelo de linguagem Google Gemini via LangChain.
